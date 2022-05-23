@@ -1,4 +1,4 @@
-<app-divider>Modal</app-divider>
+<app-divider>Modal Component</app-divider>
 <button (click)="onClick()">Show Modal</button>
 <app-modal (close)="onClick()" *ngIf="modelOpen">
     <div class="header" modalTitle>MODAL!</div>
@@ -9,4 +9,5 @@
         <button (click)="onClick()" class="ui button">OK!!!</button>
     </ng-container>
 </app-modal>
-
+<app-divider>Accordion Component</app-divider>
+<app-accordion [items]="items"></app-accordion>
